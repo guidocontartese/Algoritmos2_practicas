@@ -56,7 +56,7 @@ public class ABB <T extends Comparable<T>> implements ABBTDA<T>{
         }
         NodeABB<T> nodoAInsertar = buscarNode(element, raiz, true);
         if(nodoAInsertar.getData().compareTo(element) == 0)
-            throw new RuntimeException("Ya se encuentra el nodo");
+            return;//throw new RuntimeException("Ya se encuentra el nodo");
         else if(nodoAInsertar.getData().compareTo(element)> 0){
             nodoAInsertar.setLeftNode(new NodeABB<>(element, nodoAInsertar));
         }
@@ -66,6 +66,7 @@ public class ABB <T extends Comparable<T>> implements ABBTDA<T>{
         size++;
     }
     public T delete(T element){
+        /*Agregar prevencion de eliminar con size 0*/
         NodeABB<T> nodoAEliminar = buscarNode(element, raiz, false);
         if(nodoAEliminar == null)
             throw new RuntimeException("No se encontro el nodo");
@@ -88,6 +89,8 @@ public class ABB <T extends Comparable<T>> implements ABBTDA<T>{
         }
     }
     private void eliminarNodo2Hijos(NodeABB<T> nodoAEliminar){
+        /*al tener 2 hijos debo encontrar el menor nodo del lado mayor derecho y suplantar
+        mi nodo eliminado por el*/
         NodeABB<T> nuevaRaiz = encontrarMinimo(nodoAEliminar.getRightNode());
         nodoAEliminar.setData(nuevaRaiz.getData());
         if(nuevaRaiz.getRightNode()!= null){
@@ -128,6 +131,7 @@ public class ABB <T extends Comparable<T>> implements ABBTDA<T>{
         }
     }
     private NodeABB<T> encontrarMinimo(NodeABB<T> nodo){
+        /*Funcion auxiliar para encontrar el nodo mas chico de esa raiz*/
         while(nodo.getLeftNode() != null){
             nodo = nodo.getLeftNode();
         }

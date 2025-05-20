@@ -9,6 +9,8 @@ public class Main {
         arbol.insert(3);
         arbol.insert(6);
         arbol.insert(5);
+        arbol.insert(5);
+        arbol.insert(5);
         arbol.insert(4);
         arbol.insert(1);
         System.out.println(arbol.pertenece(2));
@@ -18,6 +20,7 @@ public class Main {
         System.out.println(arbol.delete(5));
         System.out.println(arbol.delete(1));
         System.out.println(arbol.pertenece(1));
+        System.out.println(arbol.pertenece(5));
 
     }
 }
