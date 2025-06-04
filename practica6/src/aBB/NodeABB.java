@@ -1,5 +1,9 @@
 package aBB;
 
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
+
 public class NodeABB <T extends Comparable <T>>{
     private NodeABB <T> fatherNode;
     private NodeABB <T> leftNode;
@@ -39,6 +43,7 @@ public class NodeABB <T extends Comparable <T>>{
     public T getData() {
         return data;
     }
+
 
     public void setData(T data) {
         this.data = data;

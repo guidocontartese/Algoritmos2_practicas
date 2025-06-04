@@ -2,6 +2,9 @@ package aBB;
 
 import comparator.DefaultComparator;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class ABB <T extends Comparable<T>> implements ABBTDA<T>{
     protected NodeABB<T> raiz;
     DefaultComparator<T> comparator;
@@ -74,7 +77,6 @@ public class ABB <T extends Comparable<T>> implements ABBTDA<T>{
             T retorno = nodoAEliminar.getData();
             if (size == 1) { // si es mi unico nodo...
                 raiz = null;
-                size--;
             } else {
                 if (nodoAEliminar.getLeftNode() != null && nodoAEliminar.getRightNode() != null) {
                     eliminarNodo2Hijos(nodoAEliminar);
@@ -83,7 +85,6 @@ public class ABB <T extends Comparable<T>> implements ABBTDA<T>{
                 } else
                     eliminarNodoSinHijos(nodoAEliminar);
             }
-
             size--;
             return retorno;
         }
@@ -137,5 +138,55 @@ public class ABB <T extends Comparable<T>> implements ABBTDA<T>{
         }
         return nodo;
     }
+
+    public NodeABB<T> minimo(){
+        /*Funcion auxiliar para encontrar el nodo mas chico de esa raiz*/
+        return encontrarMinimo(getRaiz());
+    }
+    public int getSize(){
+        return size;
+    }
+    public NodeABB<T> getRaiz(){
+        return raiz;
+    }
+    public void impresionNiveles(){
+        Queue<NodeABB<T>> cola = new LinkedList<NodeABB<T>>();
+        cola.add(getRaiz());
+        impresionYAgregado(cola);
+    }
+    private void impresionYAgregadoRecursivo(Queue<NodeABB<T>> cola){
+        if(cola.isEmpty())
+            return;
+        NodeABB<T> nodo = cola.poll();
+        System.out.println(nodo.getData());
+        if(nodo.getLeftNode()!=null)cola.add(nodo.getLeftNode());
+        if(nodo.getRightNode()!=null)cola.add(nodo.getRightNode());
+        impresionYAgregadoRecursivo(cola);
+    }
+    private void impresionYAgregado(Queue<NodeABB<T>> cola) {
+        while (!cola.isEmpty()) {
+            NodeABB<T> nodo = cola.poll();
+            System.out.println(nodo.getData());
+            if (nodo.getLeftNode() != null) {
+                cola.add(nodo.getLeftNode());
+            }
+            if (nodo.getRightNode() != null) {
+                cola.add(nodo.getRightNode());
+            }
+        }
+    }
+
+    public int alturaArbol(){
+        return getAltura(getRaiz());
+    }
+    private int getAltura(NodeABB<T> nodo){
+        if(nodo == null)
+            return 0;
+
+        int altizq = getAltura(nodo.getLeftNode());
+        int altder = getAltura(nodo.getRightNode());
+        return 1+ Math.max(altizq, altder);
+    }
+
     //public String toString();
 }
