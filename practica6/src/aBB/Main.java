@@ -16,7 +16,7 @@ public class Main {
         arbol.insert(5);
         arbol.insert(4);
         arbol.insert(1);
-        recorridos<Integer> recorridos = new recorridos<>();
+        Recorridos<Integer> recorridos = new Recorridos<>();
         List<Integer> arrayPre = recorridos.preOrder(arbol);
         System.out.println(arrayPre);
         List<Integer> arrayIn = recorridos.inOrder(arbol);
