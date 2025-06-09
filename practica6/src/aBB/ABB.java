@@ -187,6 +187,5 @@ public class ABB <T extends Comparable<T>> implements ABBTDA<T>{
         int altder = getAltura(nodo.getRightNode());
         return 1+ Math.max(altizq, altder);
     }
-
     //public String toString();
 }

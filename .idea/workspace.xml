@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7949663b-948e-4e03-ae7f-387eab5958e2" name="Changes" comment="Agrego comentarios de funciones">
+      <change afterPath="$PROJECT_DIR$/practica6/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practica6/src/aBB/recorridos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop.ini" beforeDir="false" afterPath="$PROJECT_DIR$/desktop.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practica6/.idea/desktop.ini" beforeDir="false" afterPath="$PROJECT_DIR$/practica6/.idea/desktop.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practica6/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/practica6/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practica6/desktop.ini" beforeDir="false" afterPath="$PROJECT_DIR$/practica6/desktop.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practica6/src/aBB/ABB.java" beforeDir="false" afterPath="$PROJECT_DIR$/practica6/src/aBB/ABB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practica6/src/aBB/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/practica6/src/aBB/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practica6/src/aBB/desktop.ini" beforeDir="false" afterPath="$PROJECT_DIR$/practica6/src/aBB/desktop.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practica6/src/comparator/desktop.ini" beforeDir="false" afterPath="$PROJECT_DIR$/practica6/src/comparator/desktop.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/practica6/src/desktop.ini" beforeDir="false" afterPath="$PROJECT_DIR$/practica6/src/desktop.ini" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2xJgxMmwqFI6KRnhQdDyyPFkNpT" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/G/Desktop/UADE/Año 2/Cuatrimestre 1/Algoritmos 2/Parcial 2/Algoritmos2_practicas/practica6"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Algoritmos2_practicas" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Algoritmos2_practicas" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7949663b-948e-4e03-ae7f-387eab5958e2" name="Changes" comment="" />
+      <created>1747661835737</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1747661835737</updated>
+    </task>
+    <task id="LOCAL-00001" summary="agregado de funciones insert y delete">
+      <option name="closed" value="true" />
+      <created>1747685699970</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1747685699971</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Agrego comentarios de funciones">
+      <option name="closed" value="true" />
+      <created>1747779159555</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1747779159555</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="agregado de funciones insert y delete" />
+    <MESSAGE value="Agrego comentarios de funciones" />
+    <option name="LAST_COMMIT_MESSAGE" value="Agrego comentarios de funciones" />
+  </component>
+  <component name="XDebuggerManager">
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="aBB.NodeABB" memberName="fatherNode" />
+        <PinnedItemInfo parentTag="aBB.NodeABB" memberName="data" />
+        <PinnedItemInfo parentTag="aBB.NodeABB" memberName="leftNode" />
+      </pinned-members>
+    </pin-to-top-manager>
+  </component>
+</project>
